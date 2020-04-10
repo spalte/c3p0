@@ -59,7 +59,7 @@ import com.mchange.v2.c3p0.management.*;
  *  and then re-look them up again (not a great idea, but not uncommon) might see
  *  distinct DataSources over multiple lookups.
  *
- *  C3P0 resolves this issue has followed: At first creation or lookup of a PooledDataSource, 
+ *  C3P0 resolves this issue as followed: At first creation or lookup of a PooledDataSource, 
  *  c3p0 creates a hard reference to that DataSource. So long as the DataSource has not
  *  been close()ed or DataSources.destroy()ed, subsequent lookups will consistently
  *  return the same DataSource. If the DataSource is never closed, then there is a potential
